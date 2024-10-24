@@ -12,6 +12,16 @@ import os
 load_dotenv()
 
 
+@asynccontextmanager
+async def async_no_autoflush(session: AsyncSession):
+    previous_autoflush = session.autoflush
+    session.autoflush = False  # Disable autoflush for this context
+    try:
+        yield
+    finally:
+        session.autoflush = previous_autoflush 
+
+
 @contextmanager
 def get_session(SessionLocal: sessionmaker):
     session = SessionLocal()
@@ -31,7 +41,7 @@ async def async_get_session(SessionLocalAsync: sessionmaker):
         yield async_session
         await async_session.commit()
     except Exception as e:
-        await async_session.rollback()
+        print(f"This ocurred:\n{e}")
     finally:
         await async_session.close()
 
