@@ -1,0 +1,247 @@
+:root {
+    --clr-bg-dark:  rgb(10, 10, 10);
+    --clr-bg-light: lightgrey;
+    --clr-brd: rgba(45,76,103);
+
+    --clr-fnt-regular: white;
+
+
+    --fs-100: 16px;
+    --fs-200: 18px;
+    --fs-400: 30px;
+    --fs-600: ;
+
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    --ff-primary: Calibri, Arial, sans-serif;
+    --ff-accent: Tahoma, "Trebuchet MS", sans-serif;
+
+}
+
+/* CSS Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--ff-primary);
+    background-color: var(--clr-bg-dark);
+    color: var(--clr-fnt-regular);
+    font-size: var(--fs-100);
+    font-weight: var(--fw-regular);
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
+
+/* Utility classes */
+.bg_dark {
+    background-color: var(--clr-bg-dark);
+}
+
+.fs_accent {
+    font-size: var(--fs-200);
+}
+
+.fw_semibold {
+    font-weight: var(--fw-semibold);
+}
+
+.fw_bold {
+    font-weight: var(--fw-bold);
+}
+
+.sentiment_number {
+    font-family: var(--ff-accent);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-bold);
+}
+
+.container {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+/* Specific classes*/
+
+.main_box {
+    width: 100%;
+}
+
+.container-up {
+    flex-direction: column;
+    height: 500px;
+}
+
+.main_bar {
+    height: auto;
+    padding: 19px 30px 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+.stocks_graph {
+    height: 100%;
+    width: 100%;
+}
+
+.stocks_graph_container {
+    height: 460px;
+    width: max(98dvw, 500px);
+    max-width: 1500px;
+}
+
+.container_down {
+    height: auto;
+    gap: 15px
+}
+
+.sentiment_box {
+    gap: 15px;
+}
+
+.words_div {
+    height: 35px;
+}
+
+.date_picker_down {
+    margin-top: 10px;
+    width: 215px;
+}
+
+.sentiment {
+    width: 165px;
+    height: 125px;
+    
+    border: 5px solid var(--clr-brd);
+}
+
+.indicators {
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.container_indicators {
+    display:flex;
+    align-items: center;
+    height: 300px;
+}
+
+.words_div {
+    width: 450px;
+    height: 300px;
+
+    border: 5px solid var(--clr-brd);
+}
+
+.wordcloud {
+    flex-shrink: 0;
+}
+
+.Select-control, .Select-value-label {
+    /* height: 48px; */
+    width: 300px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    font-size: var(--fs-100);
+    font-family: var(--ff-primary);
+    color: var(--clr-bg-dark);
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 40px;
+}
+
+.Select--single .Select-value-label {
+    color: black !important; /* Choose your preferred color */
+}
+
+/* Change color of dropdown menu options */
+.Select-menu-outer .VirtualizedSelectOption {
+    color: black !important; /* Choose your preferred color */
+    background-color: white; /* Optional: change background color */
+}
+
+/* .date_picker_up, .date_picker_down {
+    border-radius: 40px;
+    overflow: hidden ;
+} */
+
+.DateRangePickerInput * {
+    /* height: 35px; */
+    font-size: var(--fs-100);
+    font-family: var(--clr-fnt-accent);
+}
+
+.container_density {
+    gap:10px;
+    margin-top: 12px;
+}
+
+.Select-arrow-zone {
+    position: absolute;
+    right: 10px;
+}
+
+.DateInput, .DateInput_1 {
+    border-radius: 4px 0 0 4px !important;
+}
+
+.DateInput_input, .DateInput_input_1 {
+    Height: 34px !important;
+    Width: 100% !important;
+    border-radius: inherit;
+}
+
+.SingleDatePickerInput__withBorder {
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ccc !important;
+}
+
+.error_message {
+    position: fixed; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index:9999; 
+    background:#2d4c67;
+    width: 400px;
+    height: 200px;
+}

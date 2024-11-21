@@ -1,0 +1,44 @@
+[
+    {
+        "exchange": "PAR",
+        "symbol": "UBI.PA",
+        "name": "Ubisoft Entertainment SA",
+        "nickname": "Ubisoft"
+    },
+    {
+        "exchange": "NMS",
+        "symbol": "NVDA",
+        "name": "NVIDIA Corporation",
+        "nickname": "Nvidia"
+    },
+    {
+        "exchange": "HKG",
+        "symbol": "0700.HK",
+        "name": "TENCENT",
+        "nickname": "Tencent"
+    },
+    {
+        "exchange": "NMS",
+        "symbol": "INTC",
+        "name": "Intel Corporation",
+        "nickname": "Intel"
+    },
+    {
+        "exchange": "NYQ",
+        "symbol": "BA",
+        "name": "The Boeing Company",
+        "nickname": "Boeing"
+    },
+    {
+        "exchange": "NMS",
+        "symbol": "AAPL",
+        "name": "Apple Inc.",
+        "nickname": "Apple"
+    },
+    {
+        "exchange": "NMS",
+        "symbol": "MSFT",
+        "name": "Microsoft Corporation",
+        "nickname": "Microsoft"
+    }
+]
