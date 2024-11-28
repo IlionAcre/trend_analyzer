@@ -1,9 +1,15 @@
 # 📊 Marketmood
 
+
+
 ![Marketmood](https://github.com/user-attachments/assets/bb845ae1-d34e-4509-8b25-053c6f1d6108)
 
-**Marketmood** is a dynamic dashboard designed to help users monitor stocks alongside key indicators and sentiment scores derived from Google News and Reddit posts.  
+
+
+**[Marketmood](https://marketmood.falcontreras.com)** is a dynamic dashboard designed to help users monitor stocks alongside key indicators and sentiment scores derived from Google News and Reddit posts.  
 This project provides insightful graphics to visualize relationships between variables, making it a handful tool for market analysis.  
+
+You can check it out at [https://marketmood.falcontreras.com](https://marketmood.falcontreras.com)
 
 ---
 
