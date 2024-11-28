@@ -7,12 +7,11 @@
 **Marketmood** is a dynamic dashboard designed to help users monitor stocks alongside key indicators and sentiment scores derived from Google News and Reddit posts. 
 This project provides insightful graphics to visualize relationships between variables, making it a handful tool for market analysis.  
 
-
 ### 🖥️ Data Sources
 
-The data is constructed from scrapped news from google news feed, as well as reddit posts as comments. I used both rss scraping as well as playwright in order to get the data.  
-All the stock information has been taken from the yfinance library and the indicators were made using TA LIB.  
-For the sentiment model I used a pre-trained model and trained it using Hugging Face. The training process is entirely shown in the notebook.
+The data is constructed from scrapped news from Google News feed, as well as Reddit posts as comments. I used both `rss scraping` and `Playwright` to gather the data.  
+All the stock information has been taken from the `yfinance` library, and the indicators were created using `TA-LIB`.  
+For the sentiment model, I used a pre-trained model and fine-tuned it using Hugging Face. The training process is fully documented in the notebook.
 ---
 
 ### ✨ Features
