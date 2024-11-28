@@ -83,3 +83,6 @@ For the sentiment model, I used a pre-trained model and fine-tuned it using Hugg
 
 #### 🧰 Styling
 - ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+### 🛡️ License
+This project is licensed under the MIT License.
