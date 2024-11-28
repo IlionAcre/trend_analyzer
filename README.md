@@ -10,8 +10,8 @@ This project provides insightful graphics to visualize relationships between var
 
 ### 🖥️ Data Sources
 
-The data is constructed from scrapped news from google news feed, as well as reddit posts as comments. I used both rss scraping as well as playwright in order to get the data.
-All the stock information has been taken from the yfinance library and the indicators were made using TA-LIB.
+The data is constructed from scrapped news from google news feed, as well as reddit posts as comments. I used both rss scraping as well as playwright in order to get the data.  
+All the stock information has been taken from the yfinance library and the indicators were made using TA\-LIB.  
 For the sentiment model I used a pre-trained model and trained it using Hugging Face. The training process is entirely shown in the notebook.
 ---
 
