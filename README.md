@@ -9,12 +9,13 @@ This project provides insightful graphics to visualize relationships between var
 
 
 ### 🖥️ Data Sources
+
 The data is constructed from scrapped news from google news feed, as well as reddit posts as comments. I used both rss scraping as well as playwright in order to get the data.
 All the stock information has been taken from the yfinance library and the indicators were made using TA-LIB.
-For the sentiment model I used a pre-trained model and trained it using Hugging Face. The training process is entirely shown in the notebook.    
+For the sentiment model I used a pre-trained model and trained it using Hugging Face. The training process is entirely shown in the notebook.
 ---
 
-## ✨ Features
+### ✨ Features
 
 - **Stock Monitoring**: Real-time or historical stock data tracking.
 - **Sentiment Analysis**: Scores calculated from news articles and Reddit discussions.
@@ -23,13 +24,13 @@ For the sentiment model I used a pre-trained model and trained it using Hugging 
 
 ---
 
-## 📊 App
+### 📊 App
 
 - The app was made in Dash, with custom styling using CSS.
 - Almost of the graphics are made in Plotly, but the wordclouds were done using the WordCloud library.
 - The wordclouds are converted in images then passed to the dashboard.
 
-## 🛠️ Deployment
+### 🛠️ Deployment
 
 - The data is stored in a multi-tenant postgresql database deployed in Render.
 - The application is dockerized and deployed in gcloud.
